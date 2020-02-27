@@ -64,6 +64,37 @@
 		$text = $texten;
 	else	
 		$text = $textpl;
-?>	
+
+	include_once("analyticstracking.php")
+?>
+		<div class="width980" id="header">
+			<div id="for_logo">
+				<a href="<?php echo $lang == "pl"? "/?lang=pl" : "/?lang=en"; ?>" title="BedfordPrinter.co.uk">
+					<img src="img/logo.png" alt="BedfordPrinter logo" /> 
+				</a>
+			</div>
+			<div id="for_h1">
+				<h1><a href="<?php echo $lang == "pl"? "/?lang=pl" : "/?lang=en"; ?>">BedfordPrinter.co.uk</a></h1>
+			</div>
+			<div id="languages">
+				<a href="/?lang=en" title="English" class="lang">
+					<img src="img/uk.png" alt="English" /> 
+				</a>
+				<a href="/?lang=pl" title="Polish" class="lang">
+					<img src="img/pl.png" alt="Polish" /> 
+				</a>
+			</div>			
+		</div>
+		<div class="clear"></div>
+		<div id="for_background">
+			<div class="width980" id="banner">
+				<div id="printer">
+				</div>
+				<div id="banner_text">
+					<?php echo $text['intro']; ?>											
+				</div>
+				
+			</div>
+		</div>
 </body>
 </html>
