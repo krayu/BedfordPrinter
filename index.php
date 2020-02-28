@@ -96,5 +96,11 @@
 				
 			</div>
 		</div>
+<?php		
+	if (isset($_POST) && !empty($_POST)){
+		$allowedExts = array("doc", "docx", "txt", "pdf","xlsx","xls","odt");
+		$temp = explode(".", $_FILES["file"]["name"]);
+		$extension = end($temp);
+?>		
 </body>
 </html>
