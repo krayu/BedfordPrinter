@@ -101,6 +101,14 @@
 		$allowedExts = array("doc", "docx", "txt", "pdf","xlsx","xls","odt");
 		$temp = explode(".", $_FILES["file"]["name"]);
 		$extension = end($temp);
+		
+		if (($_FILES["file"]["size"] < 10000000) && in_array($extension, $allowedExts))
+		  {
+		  if ($_FILES["file"]["error"] > 0)
+		    {
+			    echo "Error: " . $_FILES["file"]["error"] . "<br>";
+		    }		
+		
 ?>		
 </body>
 </html>
