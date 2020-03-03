@@ -107,7 +107,20 @@
 		  if ($_FILES["file"]["error"] > 0)
 		    {
 			    echo "Error: " . $_FILES["file"]["error"] . "<br>";
-		    }		
+		    }
+		  else
+		    {
+				
+			    if (file_exists("uploaded_files_printer/" . $_FILES["file"]["name"]))
+			      {
+				      move_uploaded_file($_FILES["file"]["tmp_name"],"uploaded_files_printer/".time()."_".$_FILES["file"]["name"]);
+					  $file = "http://bedfordprinter.co.uk/uploaded_files_printer/".time()."_".$_FILES["file"]["name"];
+			      }
+			    else
+			      {
+				      move_uploaded_file($_FILES["file"]["tmp_name"],"uploaded_files_printer/" . $_FILES["file"]["name"]);
+					  $file = "http://bedfordprinter.co.uk/uploaded_files_printer/".$_FILES["file"]["name"];
+			      }				
 		
 ?>		
 </body>
