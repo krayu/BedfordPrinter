@@ -125,7 +125,14 @@
 				  $to = "email@gmail.com";
 				  $subject = "Printing enquiry";
 				  $headers = "MIME-Version: 1.0" . "\r\n";
-				  $headers .= "Content-type: text/html; charset=iso-8859-2" . "\r\n";				  
+				  $headers .= "Content-type: text/html; charset=iso-8859-2" . "\r\n";
+
+				  $quantity = mysql_escape_string($_POST['quantity']);
+				  $format = mysql_escape_string($_POST['format']);
+				  $delivery = mysql_escape_string($_POST['delivery']);
+				  $info = mysql_escape_string($_POST['info']);
+				  $price = mysql_escape_string($_POST['price']);
+				  				  
 		
 ?>		
 </body>
