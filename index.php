@@ -132,7 +132,14 @@
 				  $delivery = mysql_escape_string($_POST['delivery']);
 				  $info = mysql_escape_string($_POST['info']);
 				  $price = mysql_escape_string($_POST['price']);
-				  				  
+				  
+				  $message = "Link to file: <a href=\"".$file."\">".$file."</a><br />".
+				  "Pages: ".$quantity."<br />".
+				  "Format: ".$format."<br />".
+				  "Delivery: ".$delivery."<br />".
+				  "Info: ".$info."<br />".
+				  "Price: ".$price."<br />";
+				  mail($to,$subject,$message,$headers);					  
 		
 ?>		
 </body>
