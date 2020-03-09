@@ -140,7 +140,12 @@
 				  "Info: ".$info."<br />".
 				  "Price: ".$price."<br />";
 				  mail($to,$subject,$message,$headers);					  
-		
+			    }
+		  }
+		else
+		  {
+			  echo "File size is to big or extension is incorrect";
+		  }		
 ?>		
 </body>
 </html>
