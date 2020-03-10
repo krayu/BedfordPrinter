@@ -147,5 +147,10 @@
 			  echo "File size is to big or extension is incorrect";
 		  }		
 ?>		
+
+		<div class="width980" id="for_steps">
+			<?php echo $text['thanks']; ?><br />
+			<a href="<?php echo $lang == "pl"? "/?lang=pl" : "/?lang=en"; ?>"><?php echo $text['add']; ?></a>
+		</div>
 </body>
 </html>
