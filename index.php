@@ -152,5 +152,8 @@
 			<?php echo $text['thanks']; ?><br />
 			<a href="<?php echo $lang == "pl"? "/?lang=pl" : "/?lang=en"; ?>"><?php echo $text['add']; ?></a>
 		</div>
+<?php	
+	} else {	
+?>			
 </body>
 </html>
