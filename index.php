@@ -154,6 +154,10 @@
 		</div>
 <?php	
 	} else {	
-?>			
+?>	
+		<div class="width980" id="for_steps">
+			<form method="post" action="index.php" id="form" enctype="multipart/form-data">
+				<input type="hidden" name="lang" id="lang" value="<?php echo $lang;?>"/>
+				<div id="step1" class="steps">		
 </body>
 </html>
