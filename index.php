@@ -158,6 +158,15 @@
 		<div class="width980" id="for_steps">
 			<form method="post" action="index.php" id="form" enctype="multipart/form-data">
 				<input type="hidden" name="lang" id="lang" value="<?php echo $lang;?>"/>
-				<div id="step1" class="steps">		
+				<div id="step1" class="steps">
+					<div class="step_image">				
+					</div>
+					<div class="step_text">
+						<div class="step_header"><?php echo $text['upload']; ?>	</div>
+						<div id="file_container">
+							<input type="file" name="file" id="file"/>
+						</div>
+					</div>
+				</div>				
 </body>
 </html>
