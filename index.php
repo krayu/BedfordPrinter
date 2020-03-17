@@ -167,6 +167,14 @@
 							<input type="file" name="file" id="file"/>
 						</div>
 					</div>
-				</div>				
+				</div>
+				<div id="step5" class="steps">
+					<div class="step_image">	
+					</div>	
+					<div class="step_text">
+						<div class="step_header"><?php echo $text['quantity']; ?>	</div>
+						<input type="text" class="numbersOnly"  name="quantity" value="0" maxlength="3">
+					</div>							
+				</div>					
 </body>
 </html>
