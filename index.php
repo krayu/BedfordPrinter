@@ -175,6 +175,17 @@
 						<div class="step_header"><?php echo $text['quantity']; ?>	</div>
 						<input type="text" class="numbersOnly"  name="quantity" value="0" maxlength="3">
 					</div>							
+				</div>		
+				<div id="step3" class="steps">
+					<div class="step_image">	
+					</div>	
+					<div class="step_text">
+						<div class="step_header"><?php echo $text['format'][0]; ?>	</div>
+						<div class="radio_container" id="radio_format">
+							<input type="radio" name="format" id="format1" value="black"/><label for="format1"><?php echo $text['format'][1]; ?></label><br />
+							<input type="radio" name="format" id="format2" value="colour"/><label for="format2"><?php echo $text['format'][2]; ?></label><br />							
+						</div>
+					</div>							
 				</div>					
 </body>
 </html>
