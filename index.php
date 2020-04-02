@@ -186,6 +186,18 @@
 							<input type="radio" name="format" id="format2" value="colour"/><label for="format2"><?php echo $text['format'][2]; ?></label><br />							
 						</div>
 					</div>							
-				</div>					
+				</div>		
+				<div id="step2" class="steps">
+					<div class="step_image">		
+					</div>	
+					<div class="step_text">
+						<div class="step_header"><?php echo $text['delivery'][3]; ?></div>
+						<div class="radio_container">
+							<input type="radio" name="delivery" value="home" id="del1"/><label for="del1"><?php echo $text['delivery'][0]; ?></label><br />
+							<input type="radio" name="delivery" value="collection" id="del2" /><label for="del2"><?php echo $text['delivery'][1]; ?></label><br />
+							<input type="radio" name="delivery" value="post" id="del3" /><label for="del3"><?php echo $text['delivery'][2]; ?></label>
+						</div>
+					</div>							
+				</div>				
 </body>
 </html>
