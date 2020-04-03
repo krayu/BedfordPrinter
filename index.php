@@ -198,6 +198,14 @@
 							<input type="radio" name="delivery" value="post" id="del3" /><label for="del3"><?php echo $text['delivery'][2]; ?></label>
 						</div>
 					</div>							
+				</div>
+				<div id="step4a" class="steps">
+					<div class="step_image">	
+					</div>	
+					<div class="step_text">
+						<div class="step_header"><?php echo $text['info'][0]; ?></div>
+						<textarea name="info" class="info1"></textarea>
+					</div>							
 				</div>				
 </body>
 </html>
