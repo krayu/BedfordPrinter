@@ -206,6 +206,14 @@
 						<div class="step_header"><?php echo $text['info'][0]; ?></div>
 						<textarea name="info" class="info1"></textarea>
 					</div>							
-				</div>				
+				</div>
+				<div id="step4b" class="steps">
+					<div class="step_image">	
+					</div>	
+					<div class="step_text">
+						<div class="step_header"><?php echo $text['info'][1]; ?></div>
+						<textarea name="info" class="info2"></textarea>
+					</div>							
+				</div>						
 </body>
 </html>
