@@ -214,6 +214,9 @@
 						<div class="step_header"><?php echo $text['info'][1]; ?></div>
 						<textarea name="info" class="info2"></textarea>
 					</div>							
+				</div>		
+				<div id="for_price">
+					<?php echo $text['total']; ?> £<input type="text" id="price" name="price" id="price" value="0" />
 				</div>						
 </body>
 </html>
