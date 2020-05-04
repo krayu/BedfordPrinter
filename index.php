@@ -218,6 +218,7 @@
 				<div id="for_price">
 					<?php echo $text['total']; ?> £<input type="text" id="price" name="price" id="price" value="0" />
 				</div>		
-				<div id="basket">				
+				<div id="basket">
+					<div id="basket_text_pre" class="basket_text">				
 </body>
 </html>
