@@ -219,6 +219,7 @@
 					<?php echo $text['total']; ?> £<input type="text" id="price" name="price" id="price" value="0" />
 				</div>		
 				<div id="basket">
-					<div id="basket_text_pre" class="basket_text">				
+					<div id="basket_text_pre" class="basket_text">
+						<?php echo $text['basket'][0]; ?>					
 </body>
 </html>
