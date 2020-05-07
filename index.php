@@ -220,6 +220,7 @@
 				</div>		
 				<div id="basket">
 					<div id="basket_text_pre" class="basket_text">
-						<?php echo $text['basket'][0]; ?>					
+						<?php echo $text['basket'][0]; ?>	
+					</div>
 </body>
 </html>
