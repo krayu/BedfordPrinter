@@ -224,6 +224,7 @@
 					</div>
 					<div id="basket_text_post" class="basket_text">	
 						<?php echo $text['basket'][1]; ?>
-					</div>			
+					</div>
+				</div>					
 </body>
 </html>
