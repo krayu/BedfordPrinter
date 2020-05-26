@@ -226,6 +226,7 @@
 						<?php echo $text['basket'][1]; ?>
 					</div>
 				</div>
-			</form>				
+			</form>
+		</div>			
 </body>
 </html>
