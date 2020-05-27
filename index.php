@@ -227,6 +227,9 @@
 					</div>
 				</div>
 			</form>
-		</div>			
+		</div>
+<?php	
+	} 	
+?>			
 </body>
 </html>
