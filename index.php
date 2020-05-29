@@ -22,8 +22,7 @@
 		else
 			$lang = "en";
 	}
-		
-		
+				
 	$texten['intro'] = "The best online <br />printing service<br />in Bedford!";
 	$texten['upload'] = "Upload your file";
 	$texten['quantity'] = "Type pages quantity";
@@ -147,7 +146,6 @@
 			  echo "File size is to big or extension is incorrect";
 		  }		
 ?>		
-
 		<div class="width980" id="for_steps">
 			<?php echo $text['thanks']; ?><br />
 			<a href="<?php echo $lang == "pl"? "/?lang=pl" : "/?lang=en"; ?>"><?php echo $text['add']; ?></a>
