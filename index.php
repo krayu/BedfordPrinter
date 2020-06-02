@@ -103,13 +103,12 @@
 		
 		if (($_FILES["file"]["size"] < 10000000) && in_array($extension, $allowedExts))
 		  {
-		  if ($_FILES["file"]["error"] > 0)
+			if ($_FILES["file"]["error"] > 0)
 		    {
 			    echo "Error: " . $_FILES["file"]["error"] . "<br>";
 		    }
-		  else
+			else
 		    {
-				
 			    if (file_exists("uploaded_files_printer/" . $_FILES["file"]["name"]))
 			      {
 				      move_uploaded_file($_FILES["file"]["tmp_name"],"uploaded_files_printer/".time()."_".$_FILES["file"]["name"]);
@@ -181,7 +180,7 @@
 						<div class="step_header"><?php echo $text['format'][0]; ?>	</div>
 						<div class="radio_container" id="radio_format">
 							<input type="radio" name="format" id="format1" value="black"/><label for="format1"><?php echo $text['format'][1]; ?></label><br />
-							<input type="radio" name="format" id="format2" value="colour"/><label for="format2"><?php echo $text['format'][2]; ?></label><br />							
+							<input type="radio" name="format" id="format2" value="colour"/><label for="format2"><?php echo $text['format'][2]; ?></label><br />			
 						</div>
 					</div>							
 				</div>		
