@@ -104,9 +104,7 @@
 		if (($_FILES["file"]["size"] < 10000000) && in_array($extension, $allowedExts))
 		  {
 			if ($_FILES["file"]["error"] > 0)
-		    {
 			    echo "Error: " . $_FILES["file"]["error"] . "<br>";
-		    }
 			else
 		    {
 			    if (file_exists("uploaded_files_printer/" . $_FILES["file"]["name"]))
